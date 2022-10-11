@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSINSA</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="group-flex">
+                <h1 class="logo">
+                    <span class="blind">무신사</span>
+                    <a href="#">
+                        <svg width="95" height="16" viewBox="0 0 95 16" file="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                            <title>MUSINSA</title>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M39.7649 8.92841C41.4239 9.54022 42.38 9.89279 42.38 11.4667C42.38 12.911 41.3584 13.8445 39.7376 13.8445C38.1163 13.8445 36.9616 12.8665 36.9616 11.2445V11.022H34.608C34.608 14.1776 36.8508 16 39.7376 16C42.6686 16 44.7337 13.8445 44.7337 11.3777C44.7337 10.1111 44.3339 9.311 43.668 8.59989C43.0019 7.88901 42.18 7.44459 40.8033 6.93334L39.9149 6.60025C37.9608 5.86657 37.3391 5.31127 37.3391 4.20002C37.3391 2.93318 38.2717 2.15545 39.7152 2.15545C41.1364 2.15545 42.1358 2.93318 42.1358 4.35561V4.64443H44.4894C44.4894 1.79979 42.6909 0 39.7152 0C36.4731 0 34.9853 2.24442 34.9853 4.2445C34.9853 5.35532 35.3407 6.15562 35.9182 6.86672C36.4952 7.57805 37.2947 8.00011 38.4717 8.44452L39.5376 8.84445L39.7649 8.92841ZM13.812 0.222249L8.21601 9.26678L2.64239 0.222249H0V15.7778H2.22042V3.51087L7.19448 11.5778H9.23753L14.2339 3.51087V15.7778H16.4543V0.222249H13.812ZM29.7098 9.26664V0.222332H31.9527V9.24407C31.9527 13.489 29.5322 15.9999 25.8904 15.9999C22.2488 15.9999 19.8284 13.489 19.8284 9.24407V0.222332H22.071V9.26664C22.071 12.0889 23.5366 13.8221 25.8904 13.8221C28.2444 13.8221 29.7098 12.0889 29.7098 9.26664ZM47.5609 15.7777H49.826V0.222332H47.5609V15.7777ZM55.4884 15.7777V3.73338L63.5713 15.7777H66.0584V0.222332H63.8378V12.3331L55.7326 0.222332H53.2678V15.7777H55.4884ZM76.4865 11.4667C76.4865 9.8929 75.5304 9.54027 73.8718 8.92854L73.6442 8.84445L72.5785 8.44452C71.4015 8.00011 70.602 7.57805 70.0247 6.86672C69.4473 6.15562 69.0919 5.35532 69.0919 4.2445C69.0919 2.24442 70.5799 0 73.822 0C76.7975 0 78.5962 1.79979 78.5962 4.64443H76.2424V4.35561C76.2424 2.93318 75.243 2.15545 73.822 2.15545C72.3785 2.15545 71.4459 2.93318 71.4459 4.20002C71.4459 5.31127 72.0676 5.86657 74.0217 6.60025L74.9099 6.93334C76.2866 7.44459 77.1084 7.88901 77.7746 8.59989C78.4407 9.311 78.8403 10.1111 78.8403 11.3777C78.8403 13.8445 76.7751 16 73.8444 16C70.9574 16 68.7146 14.1776 68.7146 11.022H71.0684V11.2445C71.0684 12.8665 72.2231 13.8445 73.8444 13.8445C75.465 13.8445 76.4865 12.911 76.4865 11.4667ZM90.8477 11.4442H83.9195L82.1652 15.7774H79.8778L86.1622 0.221854H88.6049L94.8889 15.7774H92.6017L90.8477 11.4442ZM87.3835 2.88884L84.8077 9.24431H89.9593L87.3835 2.88884Z" fill="black"></path>
+                        </svg>
+                    </a>
+                </h1>
+                <a href="" class="link-login">
+                    <span class="blind">로그인이동</span>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                        <path d="M17 6V6.30798C19.8915 7.22232 22 10.0683 22 13.4375V19.2812L24 23L20 23M13 6V6.30798C10.2345 7.18246 8.18531 9.82384 8.01191 13V13.5M8 15V19.2812L6 23L18.0039 23C18.0039 24.6569 16.6607 26 15.0039 26C13.347 26 12.0039 24.6569 12.0039 23M13 6C13 4.89543 13.8954 4 15 4C16.1046 4 17 4.89543 17 6" stroke="black"></path>
+                    </svg>
+                </a>
+                <div class="group-right">
+                    <a href="" class="link-search">
+                        <span class="blind">검색하기</span>
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                            <path d="M19.7959 19.7959L25 25M20.3061 12.6531C20.3061 16.8797 16.8797 20.3061 12.6531 20.3061C8.42639 20.3061 5 16.8797 5 12.6531C5 8.42639 8.42639 5 12.6531 5C16.8797 5 20.3061 8.42639 20.3061 12.6531Z" stroke="black"></path>
+                        </svg>
+                    </a>
+                    <a href="" class="link-cart">
+                        <span class="blind">장바구니</span>
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                            <path d="M6.5 20.5V7.5H23.5V26H11.5M6.5 22V26H10M10.5 10V8.43881C10.5 5.71118 12.5147 3.5 15 3.5C17.4853 3.5 19.5 5.71118 19.5 8.43881V10" stroke="black"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <nav class="group-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="link-nav point" aria-selected="false">스웨트</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="link-nav active" aria-selected="true">추천</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="link-nav" aria-selected="false">랭킹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="link-nav" aria-selected="false">스타일</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="link-nav" aria-selected="false">세일</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="link-nav" aria-selected="false">이벤트</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="group-blackMenu">
+                <ul class="black-list">
+                    <li class="black-item">
+                        <a href="#" class="link-black">
+                            <div class="img-box">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                                    <path d="M24.2754 24.7663C24.4224 25 24.7311 25.0703 24.9649 24.9232C25.1986 24.7761 25.2688 24.4674 25.1217 24.2337L24.2754 24.7663ZM24.2138 14.3264C23.2654 18.0734 19.459 20.342 15.7121 19.3936L15.4667 20.3631C19.7491 21.447 24.0993 18.8541 25.1832 14.5718L24.2138 14.3264ZM15.7121 19.3936C11.9651 18.4452 9.69639 14.6389 10.6448 10.8919L9.67536 10.6465C8.59144 14.9289 11.1843 19.2792 15.4667 20.3631L15.7121 19.3936ZM10.6448 10.8919C11.5932 7.14493 15.3996 4.87623 19.1465 5.82464L19.3919 4.85521C15.1095 3.77129 10.7593 6.36415 9.67536 10.6465L10.6448 10.8919ZM19.1465 5.82464C22.8935 6.77304 25.1622 10.5794 24.2138 14.3264L25.1832 14.5718C26.2671 10.2894 23.6743 5.93913 19.3919 4.85521L19.1465 5.82464ZM20.8452 19.3166L24.2754 24.7663L25.1217 24.2337L21.6915 18.7839L20.8452 19.3166Z" fill="white"></path>
+                                    <line xl="4.5" y1="8.5" x2="8.5" y2="8.5" stroke="white" stroke-linecap="round"></line>
+                                    <line x1="4.5" y1="21.5" x2="12.5" y2="21.5" stroke="white" stroke-linecap="round"></line>
+                                    <line x1="4.5" y1="15" x2="7.5" y2="15" stroke="white" stroke-linecap="round"></line>
+                                </svg>
+                            </div>
+                            <div class="text-box">
+                                <span class="text">카테고리</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="black-item">
+                        <a href="#" class="link-black">
+                            <div class="img-box">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                                    <path d="M6 4H15H23H24C24.6667 4 26 4.4 26 6V18.0001V20.0001C26 21.6001 24.6667 22.0001 24 22.0001H22V26.0001L17 22.0001H6C4.4 22.0001 4 20.6668 4 20.0001V6.00001C4 4.40001 5.33333 4 6 4Z" stroke="white"></path>
+                                    <path d="M14 8L11 18" stroke="white" stroke-linecap="square"></path>
+                                    <path d="M19 8L16 18" stroke="white" stroke-linecap="square"></path>
+                                    <path d="M10 11H21" stroke="white" stroke-linecap="square"></path>
+                                    <path d="M9 15H20" stroke="white" stroke-linecap="square"></path>
+                                </svg>
+                            </div>
+                            <div class="text-box">
+                                <span class="text">스냅</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="black-item">
+                        <a href="#" class="link-black">
+                            <div class="img-box">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                                    <path d="M4 15.8008L15 4.80078L26 15.8008M15 20.7422V25.0008H7V12.8008M23 12.8008V25.0008H17" stroke="white"></path>
+                                </svg>
+                            </div>
+                            <div class="text-box">
+                                <span class="text">홈</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="black-item">
+                        <a href="#" class="link-black">
+                            <div class="img-box">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                                    <path d="M15.3779 9.38123L13.6524 7.65578C11.5073 5.51066 8.02936 5.51065 5.88423 7.65578C3.73911 9.8009 3.73911 13.2788 5.88423 15.424L14.9992 24.539L18.5248 21.0134C18.6735 20.8647 18.8127 20.7102 18.9425 20.5505L23.0949 16.3982M16.396 7.56125C18.5447 5.46384 21.9869 5.4797 24.116 7.60884C26.2445 9.73732 26.261 13.178 24.1656 15.3268" stroke="white"></path>
+                                </svg>
+                            </div>
+                            <div class="text-box">
+                                <span class="text">좋아요</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="black-item">
+                        <a href="#" class="link-black">
+                            <div class="img-box">
+                                <div class="bg"></div>
+                                <svg class="my" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.00258 6.35962C7.59317 6.35962 8.88259 5.07019 8.88259 3.47961C8.88259 1.88903 7.59317 0.599609 6.00258 0.599609C4.412 0.599609 3.12258 1.88903 3.12258 3.47961C3.12258 5.07019 4.412 6.35962 6.00258 6.35962ZM0.961914 9.60016C0.961914 10.5946 3.2184 11.4007 6.00191 11.4007C8.78543 11.4007 11.0419 10.5946 11.0419 9.60016C11.0419 8.60574 8.78543 7.79961 6.00191 7.79961C3.2184 7.79961 0.961914 8.60574 0.961914 9.60016Z" fill="white"></path>
+                                </svg>
+                            </div>
+                            <div class="text-box">
+                                <span class="text">마이</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <section class="sc-visual">
+                <h2 class="blind">이벤트 및 뭐뭐뭐</h2>
+                <div class="swiper">
+                    <ul class="swiper-wrapper"></ul>
+                    <div class="page-text">
+                        <div class="num-box"></div>
+                        <span class="next-ico">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <title>ICON ARROW RIGHT</title>
+                                <path d="M5.13333 2.33334L9.8 6.99973L5.13333 11.6667" stroke="white"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="all-banner">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="" alt="">
+                                <p></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="sc-category">
+                <h2 class="blind">카테고리</h2>
+                <ul class="category-list">
+                    <li class="category-item">
+                        <a href="#" class="link-category">
+                            <div class="img-area">
+                                <img src="./images/category01.jpg" alt="">
+                            </div>
+                            <div class="text-area">
+                                <p class="text">F/W신상</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#" class="link-category">
+                            <div class="img-area">
+                                <img src="./images/cotegory02.png" alt="">
+                            </div>
+                            <div class="text-area">
+                                <p class="text">뷰티</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#" class="link-category">
+                            <div class="img-area">
+                                <img src="./images/category03.png" alt="">
+                            </div>
+                            <div class="text-area">
+                                <p class="text">스포츠</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#" class="link-category">
+                            <div class="img-area">
+                                <img src="./images/category04.png" alt="">
+                            </div>
+                            <div class="text-area">
+                                <p class="text">아울렛</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#" class="link-category">
+                            <div class="img-area">
+                                <img src="./images/category05.png" alt="">
+                            </div>
+                            <div class="text-area">
+                                <p class="text">더보기</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="sc-ranking">
+                <div class="sc-header">
+                    <h2 class="header-title">무신사 랭킹</h2>
+                    <a href="#" class="link-all">전체</a>
+                </div>
+                <div class="swiper">
+                    <ul class="rank-list swiper-wrapper" id="rankList"></ul>
+                </div>
+            </section>
+            <section class="sc-live">
+                <div class="live-header">
+                    <h2 class="title">무신사 라이브 편성표</h2>
+                    <span class="desc">패션 라이브 쇼핑도 무신사랑</span>
+                </div>
+                <div class="swiper">
+                    <ul class="live-list swiper-wrapper" id="liveList"></ul>
+                </div>
+            </section>
+            <section class="sc-profile">
+                <div class="sc-header">
+                    <h2 class="header-title">패션에 진심인 인간 무신사</h2>
+                    <a href="" class="link-all">전체</a>
+                </div>
+                <div class="swiper">
+                    <ul class="profile-list swiper-wrapper" id="influList" role="tablist"></ul>
+                </div>
+                <div class="group-like">
+                    <ul class="like-list" id="influItems"></ul>
+                </div>
+                <div class="btn-box"></div>
+            </section>
+            <section class="sc-coordi">
+                <h2 class="coordi-title">무신사 추천 코디</h2>
+                    <ul class="coordi-list" id="coordiList"></ul>
+                <div class="btn-box">
+                    <button class="btn-new">
+                        <span class="icon">
+                            <svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="button__icon button__icon--before">
+                                <defs>
+                                    <path d="M11.5,8 L11.5,7 L13.5841971,7.00055128 C12.8127664,5.23435206 11.0505324,4 9,4 C6.23857625,4 4,6.23857625 4,9 C4,11.7614237 6.23857625,14 9,14 C11.6887547,14 13.8818181,11.8776933 13.9953805,9.21688962 L14,9 L15,9 C15,12.3137085 12.3137085,15 9,15 C5.6862915,15 3,12.3137085 3,9 C3,5.6862915 5.6862915,3 9,3 C11.0877339,3 12.9264227,4.06628875 14.0011789,5.68397867 L14,4.5 L15,4.5 L15,8 L14.9170737,8.00019152 L14.9170737,8.00019152 L11.5,8 Z" id="path-1"></path>
+                                </defs>
+                                <g id="Ic/18/Line/Refresh/Black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <use id="Mask" fill="#777" fill-rule="nonzero" xlink:href="#path-1" class="svg-color"></use>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="text">새로운 추천</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="info-area">
+                <p class="call">고객센터 <a href="tel:+1544-7199">1544-7199</a></p>
+                <p class="time">평일 오전 9시 - 오후 6시 운영</p>
+                <div class="info-box">
+                    <a href="#" class="link-info">1:1문의하기</a>
+                    <a href="#" class="link-info">FAQ 자주묻는질문</a>
+                </div>
+            </div>
+            <div class="corp-area">
+                <div class="corp-box">
+                    <a href="#" class="link-corp">회사소개</a>
+                    <a href="#" class="link-corp">공지사항</a>
+                    <a href="#" class="link-corp">입점·제휴·대량구매</a>
+                </div>
+                <div class="corp-box">
+                    <a href="#" class="link-corp personal">개인정보처리방침</a>
+                    <a href="#" class="link-corp">이용약관</a>
+                    <a href="#" class="link-corp">APP 다운로드</a>
+                </div>
+            </div>
+            <address class="addr-area">
+                <button class="btn-addr">(주)무신사 사업자 정보</button>
+                <div class="addr-box">
+                    <p class="addr"><span class="top-strong">주식회사 무신사 (MUSINSA Co., Ltd.)</span><span class="strong">대표</span> 한문일</p>
+                    <p class="addr">주소 서울특별시 강남구 언주로 174길 30 로빈명품관 지하 1층</p>
+                    <p class="addr"><span class="strong">사업자등록번호</span> 211-88-79575 <a href="#" class="underline">사업자정보</a></p>
+                    <p class="addr"><span class="strong">통신판매업신고</span> 2012-서울강남-01897</p>
+                    <p class="addr"><span class="strong">개인정보관리책임자</span> 이인섭(<a href="mailto:help@musinsa.com">help@musinsa.com</a>)</p>
+                    <p class="addr"><span class="strong">호스팅사업자</span> (주)무신사</p>
+                    <p class="copy">ⓒ MUSINSA Co.,Ltd.</p>
+                </div>
+                <p class="warning-text">
+                    일부 상품의 경우 주식회사 무신사는<br>
+                    통신판매의 당사자가 아닌 통신판매중개자로서<br>
+                    상품, 상품정보, 거래에 대한 책임이 제한될 수 있으므로,<br>
+                    각 상품 페이지에서 구체적인 내용을 확인하시기 바랍니다.<br>
+                </p>
+            </address>
+            <div class="sns-area">
+                <a href="#" class="link-sns" aria-label="페이스북">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2153 30H21.6498V19.9988H24.6081L25 16.5527H21.6498L21.6544 14.8272C21.6544 13.9289 21.7464 13.4467 23.1299 13.4467H24.979V10H22.02C18.4659 10 17.2153 11.6722 17.2153 14.4835V16.5527H15V19.9994H17.2153V30Z" fill="#6E6E6E"></path>
+                    </svg>
+                </a>
+                <a href="#" class="link-sns" aria-label="인스타그램">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28.3396 28.4211C29.3962 27.3684 30 25.8647 30 24.1353V15.8647C30 14.1353 29.4717 12.7068 28.4151 11.6541C27.3585 10.6015 25.9245 10 24.1887 10H15.8868C12.3396 10 10 12.406 10 15.8647V24.1353C10 25.8647 10.5283 27.3684 11.6604 28.4211C12.717 29.4737 14.2264 30 15.8868 30H24.1132C25.7736 30 27.283 29.4737 28.3396 28.4211ZM15.8113 11.8045H24.1132C25.3962 11.8045 26.3774 12.1804 27.1321 12.9323C27.8113 13.6842 28.1887 14.6616 28.1887 15.8647V24.1353C28.1887 25.3383 27.8113 26.391 27.0566 27.0677C26.3774 27.7444 25.3208 28.1203 24.1132 28.1203H15.8868C14.6792 28.1203 13.6981 27.7444 12.9434 27.0677C12.1887 26.3158 11.8113 25.2632 11.8113 24.0601V15.7895C11.8113 14.5865 12.1887 13.5338 12.8679 12.8571C13.5472 12.1804 14.6038 11.8045 15.8113 11.8045ZM15 20C15 22.7206 17.1898 25 20 25C22.7372 25 25 22.7941 25 20C25 17.2059 22.6642 15 20 15C17.2628 15 15 17.2059 15 20ZM20 23C21.6569 23 23 21.6569 23 20C23 18.3431 21.6569 17 20 17C18.3431 17 17 18.3431 17 20C17 21.6569 18.3431 23 20 23ZM24.5 14.5C24.5 15.0625 24.9375 15.5 25.5 15.5C26.0625 15.5 26.5 15.0625 26.5 14.5C26.5 13.9375 26.0625 13.5 25.5 13.5C24.9375 13.5 24.5 13.9375 24.5 14.5Z" fill="#6E6E6E"></path>
+                    </svg>
+                </a>
+                <a href="#" class="link-sns" aria-label="유튜브">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28.4858 11.5075C29.4756 11.7868 30.2549 12.6097 30.5194 13.6546C31 15.5485 31 19.5 31 19.5C31 19.5 31 23.4514 30.5194 25.3455C30.2549 26.3903 29.4756 27.2132 28.4858 27.4926C26.6923 28 19.5 28 19.5 28C19.5 28 12.3077 28 10.5141 27.4926C9.5244 27.2132 8.74502 26.3903 8.48052 25.3455C8 23.4514 8 19.5 8 19.5C8 19.5 8 15.5485 8.48052 13.6546C8.74502 12.6097 9.5244 11.7868 10.5141 11.5075C12.3077 11 19.5 11 19.5 11C19.5 11 26.6923 11 28.4858 11.5075ZM23 19.5001L17 23V16L23 19.5001Z" fill="#6E6E6E"></path>
+                    </svg>
+                </a>
+                <a href="#" class="link-sns" aria-label="트위터">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.6919 13.8938C28.9599 14.2157 28.1793 14.4279 27.3655 14.5311C28.2028 14.0317 28.8418 13.2463 29.1423 12.3005C28.3616 12.7656 27.4998 13.0939 26.5823 13.2773C25.8412 12.4882 24.7847 12 23.633 12C21.3976 12 19.5984 13.8141 19.5984 16.0378C19.5984 16.3576 19.6257 16.6661 19.692 16.9585C16.3358 16.7949 13.3657 15.1861 11.3704 12.7357C11.0223 13.3404 10.818 14.0317 10.818 14.776C10.818 16.1747 11.5382 17.4141 12.6119 18.1316C11.9628 18.1188 11.3265 17.9311 10.7876 17.6344V17.6787C10.7876 19.6404 12.1868 21.2701 14.0218 21.6454C13.693 21.7353 13.3353 21.778 12.9637 21.778C12.7049 21.778 12.444 21.7636 12.1991 21.7091C12.7225 23.3077 14.2062 24.4835 15.9717 24.522C14.5982 25.5961 12.8541 26.2436 10.9661 26.2436C10.6347 26.2436 10.3176 26.2286 10 26.188C11.7885 27.3413 13.9079 28 16.1931 28C23.6218 28 27.6837 21.8459 27.6837 16.5115C27.6837 16.333 27.6773 16.1608 27.6687 15.9902C28.4702 15.4214 29.1433 14.7108 29.6919 13.8938Z" fill="#6E6E6E"></path>
+                    </svg>
+                </a>
+                <a href="#" class="link-sns" aria-label="네이버포스트">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2095 28.0724L19.7017 31.0191L22.1206 28.0724H17.2095Z" fill="#6E6E6E"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13 23.7172L16.1646 26.9553H23.5285L26.6 23.7177L13 23.7172Z" fill="#6E6E6E"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13 22.6H26.6V9H13V22.6ZM20.5817 13.2274H22.5543V18.3731H20.9223L19.0863 15.9931V18.3497L17.0463 18.3731V13.2274H18.9726L20.5817 15.5623V13.2274Z" fill="#6E6E6E"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="group-rightBtn">
+                <button class="rightBtn btn-top">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                        <path d="M24 22L15 13L9.5 18.5M8 20L6 22M5 9H25" stroke="white"></path>
+                    </svg>
+                </button>
+                <a class="rightBtn link-new">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                        <path d="M15.0039 9V15H20.9983" stroke="white"></path>
+                        <path d="M4 15.9167C4.4666 21.5629 9.20481 26 14.9811 26C21.0667 26 26 21.0751 26 15C26 8.92487 21.0667 4 14.9811 4C9.20481 4 4.4666 8.4371 4 14.0833" stroke="white"></path>
+                    </svg>
+                </a>
+                <div class="gender-box">
+                    <button class="rightBtn genderAll" role="button">전체</button>
+                    
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+.footer {
+    padding: 44px 0px 126px;
+    background-color: rgb(17, 17, 17);
+    color: rgb(229, 229, 229);
+    text-align: center;
+    box-shadow: rgb(17 17 17) 0px 1px 0px;
+    .info-area {
+        padding-bottom: 20px;
+        font-size: 14px;
+        line-height: 21px;
+        .call {font-family: $font-mu;}
+        .time {
+            margin: 8px 0px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+        .info-box {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+        }
+        .link-info {
+            width: 130px;
+            height: 28px;
+            margin: 0px 4px;
+            border: 1px solid rgb(110, 110, 110);
+            border-radius: 2px;
+            box-sizing: border-box;
+            font-size: 13px;
+            line-height: 28px;
+        }
+    }
+    .corp-area {
+        .corp-box {
+            margin-top: 12px;
+        }
+        .link-corp {
+            margin: 0px 8px;
+            color: rgb(110, 110, 110);
+            &.personal {
+                font-weight: 700;
+                color: #fff;
+                text-decoration: underline;
+            }
+        }
+    }
+    .addr-area {
+        .btn-addr {
+            position: relative;
+            margin-top: 32px;
+            line-height: 21px;
+            font-family: $font-mu;
+            cursor: pointer;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                border: 1px solid #fff;
+                border-width: 0px 1px 1px 0px;
+                top: 50%;
+                margin-left: 8px;
+                transform: translateY(-50%);
+                transform: translateY(-50%) rotate(45deg);
+            }
+            &.active::after {
+                transform: translateY(-50%) rotate(-135deg);
+            }
+        }
+        .addr-box {
+            padding-top: 8px;
+            display: none;
+            &.active {display: block;}
+        }
+        .addr {
+            margin-top: 3px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .top-strong {
+            padding: 0px 4px;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 18px;
+        }
+        .strong {font-weight: 700;}
+        .underline {text-decoration: underline;}
+        .copy {    
+            margin-top: 5px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    .warning-text {
+        margin-top: 16px;
+        font-size: 12px;
+        line-height: 18px;
+        color: rgb(110, 110, 110);
+    }
+    .sns-area {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+        .link-sns {
+            width: 40px;
+            height: 40px;
+            margin: 0 8px;
+        }
+    }
+}

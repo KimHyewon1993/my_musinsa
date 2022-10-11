@@ -1,0 +1,42 @@
+.wrapper {
+    position: relative;
+}
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+.sc-header {
+    position: relative;
+}
+.header-title {
+    font-family: $font-mu;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.link-all {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 26px;
+    font-size: 12px;
+    color: #777;
+    &::after {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border: 1px solid #777;
+        border-width: 0px 1px 1px 0px;
+        top: 50%;
+        margin-left: 5px;
+        transform: translateY(-50%);
+        transform: translateY(-50%) rotate(-45deg);
+        position: absolute;
+    }
+}
+
