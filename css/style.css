@@ -26,22 +26,21 @@
 .link-all {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   right: 26px;
+  transform: translateY(-50%);
   font-size: 12px;
   color: #777;
 }
 .link-all::after {
   content: "";
+  position: absolute;
+  top: 50%;
   width: 6px;
   height: 6px;
+  transform: translateY(-50%) rotate(-45deg);
   border: 1px solid #777;
   border-width: 0px 1px 1px 0px;
-  top: 50%;
   margin-left: 5px;
-  transform: translateY(-50%);
-  transform: translateY(-50%) rotate(-45deg);
-  position: absolute;
 }
 
 * {
@@ -85,8 +84,8 @@ button {
 body {
   font-size: 14px;
   font-family: "musinsa", sans-serif;
-  color: #000;
   line-height: 1.5;
+  color: #000;
 }
 
 @font-face {
@@ -95,10 +94,10 @@ body {
 }
 .footer {
   padding: 44px 0px 126px;
-  background-color: rgb(17, 17, 17);
-  color: rgb(229, 229, 229);
   text-align: center;
   box-shadow: rgb(17, 17, 17) 0px 1px 0px;
+  background-color: rgb(17, 17, 17);
+  color: rgb(229, 229, 229);
 }
 .footer .info-area {
   padding-bottom: 20px;
@@ -115,8 +114,8 @@ body {
 }
 .footer .info-area .info-box {
   display: flex;
-  gap: 8px;
   justify-content: center;
+  gap: 8px;
 }
 .footer .info-area .link-info {
   width: 130px;
@@ -124,9 +123,9 @@ body {
   margin: 0px 4px;
   border: 1px solid rgb(110, 110, 110);
   border-radius: 2px;
-  box-sizing: border-box;
   font-size: 13px;
   line-height: 28px;
+  box-sizing: border-box;
 }
 .footer .corp-area .corp-box {
   margin-top: 12px;
@@ -136,7 +135,7 @@ body {
   color: rgb(110, 110, 110);
 }
 .footer .corp-area .link-corp.personal {
-  font-weight: 700;
+  font-weight: 500;
   color: #fff;
   text-decoration: underline;
 }
@@ -150,14 +149,13 @@ body {
 .footer .addr-area .btn-addr::after {
   content: "";
   position: absolute;
+  top: 50%;
   width: 6px;
   height: 6px;
+  transform: translateY(-50%) rotate(45deg);
   border: 1px solid #fff;
   border-width: 0px 1px 1px 0px;
-  top: 50%;
   margin-left: 8px;
-  transform: translateY(-50%);
-  transform: translateY(-50%) rotate(45deg);
 }
 .footer .addr-area .btn-addr.active::after {
   transform: translateY(-50%) rotate(-135deg);
@@ -177,11 +175,11 @@ body {
 .footer .addr-area .top-strong {
   padding: 0px 4px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 18px;
 }
 .footer .addr-area .strong {
-  font-weight: 700;
+  font-weight: 600;
 }
 .footer .addr-area .underline {
   text-decoration: underline;
@@ -238,10 +236,10 @@ body {
 .header .nav-item {
   height: 45px;
   padding: 0 10px;
-  font-weight: 400;
   font-size: 15px;
-  color: #777;
+  font-weight: 400;
   line-height: 45px;
+  color: #777;
 }
 .header .link-nav {
   position: relative;
@@ -289,10 +287,10 @@ body {
   position: absolute;
   bottom: 40px;
   left: 0;
-  z-index: 10;
   width: 100%;
   text-align: center;
   color: #fff;
+  z-index: 10;
 }
 .sc-visual .text-bg .title {
   display: block;
@@ -320,6 +318,9 @@ body {
 }
 .sc-visual .page-text {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   right: 0;
   bottom: 0;
   width: 64px;
@@ -327,14 +328,11 @@ body {
   padding: 0 4px 0 8px;
   border-radius: 3px 0 0 0;
   background: rgba(0, 0, 0, 0.2);
-  color: #fff;
   font-size: 11px;
   font-weight: 500;
   font-family: "musinsa", sans-serif;
+  color: #fff;
   z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .sc-category {
@@ -347,9 +345,9 @@ body {
   padding: 0 15px;
 }
 .sc-category .category-item {
-  margin-bottom: 16px;
   width: 20%;
   max-width: 80px;
+  margin-bottom: 16px;
 }
 .sc-category .img-area {
   width: 80%;
@@ -391,9 +389,9 @@ body {
   background-color: #000;
   font-family: "musinsa", sans-serif;
   font-size: 12px;
-  color: #fff;
-  text-align: center;
   line-height: 24px;
+  text-align: center;
+  color: #fff;
 }
 .sc-ranking .img-area img {
   width: 100%;
@@ -408,8 +406,8 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-weight: 400;
   font-size: 12px;
+  font-weight: 400;
   color: #777;
 }
 .sc-ranking .text-area .price-box {
@@ -417,9 +415,9 @@ body {
   justify-content: space-between;
 }
 .sc-ranking .text-area .price {
+  font-size: 15px;
   font-family: "musinsa", sans-serif;
   font-weight: 500;
-  font-size: 15px;
 }
 .sc-ranking .text-area .sale {
   margin: 0 5px 0 auto;
@@ -445,8 +443,8 @@ body {
   font-size: 18px;
 }
 .sc-live .live-header .desc {
-  color: #333333;
   font-size: 14px;
+  color: #333333;
 }
 .sc-live .img-area {
   position: relative;
@@ -462,10 +460,10 @@ body {
   height: 20px;
   padding: 0 6px;
   border-radius: 4px;
-  background-color: #000;
   font-family: "musinsa", sans-serif;
   font-size: 12px;
   line-height: 20px;
+  background-color: #000;
   color: #fff;
 }
 .sc-live .img-area img {
@@ -474,8 +472,8 @@ body {
   object-fit: cover;
 }
 .sc-live .text-area .desc {
-  margin-top: 8px;
   padding-right: 4px;
+  margin-top: 8px;
   font-size: 13px;
   line-height: 1.5;
   max-height: 3;
@@ -513,16 +511,15 @@ body {
 }
 .sc-profile .swiper-slide .img-area {
   position: absolute;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 64px;
   height: 64px;
-  overflow: hidden;
+  border: 2px solid #fff;
   border-radius: 100%;
   background-color: #fff;
-  border: 2px solid #fff;
+  overflow: hidden;
 }
 .sc-profile .swiper-slide .text-area {
   margin-top: 5px;
@@ -546,10 +543,10 @@ body {
   padding: 0 15px;
 }
 .sc-profile .like-list {
-  margin-top: 12px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3px;
+  margin-top: 12px;
 }
 .sc-profile .like-item {
   position: relative;
@@ -584,9 +581,9 @@ body {
   color: #fff;
 }
 .sc-profile .btn-box {
-  margin-top: 24px;
   display: flex;
   justify-content: center;
+  margin-top: 24px;
 }
 .sc-profile .link-sortcut {
   display: flex;
@@ -597,22 +594,22 @@ body {
   border-radius: 20px;
 }
 .sc-profile .link-sortcut .strong {
-  color: #000;
   font-weight: bold;
   margin-right: 5px;
+  color: #000;
 }
 .sc-profile .link-sortcut .text {
   font-size: 14px;
   color: #777;
 }
 .sc-profile .link-sortcut .icon {
-  height: 8px;
+  top: 50%;
   width: 8px;
+  height: 8px;
+  transform: translateY(-50%) rotate(-45deg);
   border: 1px solid #777;
   border-width: 0px 1px 1px 0px;
-  top: 50%;
   margin: 6px 0 0 5px;
-  transform: translateY(-50%) rotate(-45deg);
 }
 
 .sc-coordi {
@@ -662,9 +659,9 @@ body {
   justify-content: center;
 }
 .sc-coordi .btn-box .btn-new {
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
   height: 40px;
   padding: 0 20px;
   border: 1px solid #f1f1f1;
@@ -707,14 +704,13 @@ body {
 }
 .group-blackMenu .img-box .bg {
   width: 24px;
-  margin: 3px;
   height: 24px;
   border: 1px solid rgb(255, 255, 255);
   background-color: rgb(236, 236, 236);
   border-radius: 50%;
+  margin: 3px;
 }
 .group-blackMenu .img-box svg.my {
-  position: absolute;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -723,8 +719,8 @@ body {
 .group-blackMenu .text-box .text {
   display: block;
   padding-top: 1px;
-  line-height: 17px;
   font-size: 11px;
+  line-height: 17px;
   color: #fff;
   text-align: center;
 }
@@ -749,12 +745,12 @@ body {
   margin-top: 14px;
 }
 .group-rightBtn .genderAll {
-  margin-top: 14px;
-  background: #000;
-  color: #fff;
-  font-family: "musinsa", sans-serif;
-  font-size: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "musinsa", sans-serif;
+  font-size: 13px;
+  margin-top: 14px;
+  background: #000;
+  color: #fff;
 }

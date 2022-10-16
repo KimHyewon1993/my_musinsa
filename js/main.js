@@ -45,8 +45,8 @@ $(function(){
         loop: true,
         parallax: true,
         autoplay: {
-        delay: 2500,
-        disableOnInteraction: false
+            delay: 2500,
+            disableOnInteraction: false
         },
         pagination: {
             el: ".num-box",
@@ -255,69 +255,3 @@ $(function(){
     });
 
 });
-
-
-
-
-
-
-
-
-
-/*  
-<li class="swiper-slide">
-    <a href="#">
-        <div class="img-area" data-swiper-parallax-x="50%">
-            <img src="./images/mv.jpg" alt="">
-        </div>
-        <div class="text-bg">
-            <strong class="title">2020 스웨트 페스티벌</strong>
-            <div class="text-area">
-                <span class="desc">22.09.06 - 09.19</span>
-            </div>
-        </div>
-    </a>
-</li>  
-
-<em class="num">
-    <span class="blind">현재</span>
-    11
-</em>
-<em class="num">
-    <span class="blind">전체</span>
-    / 28
-</em>
-
-<li class="coordi-item">
-    <a href="#" class="link-coordi">
-        <img src="./images/coordi01.jpg" alt="코디1" class="img">
-    </a>
-</li>
-
-<a href="#" class="link-sortcut">
-    <strong class="strong">${}</strong>
-    <span class="text">프로필 보러 가기</span>
-    <span class="icon"></span>
-</a>
-
-<li class="like-item">
-    <a href="#" class="link-like">
-        <div class="img-box">
-            <img src="./images/profile-bottom.jpg" alt="">
-        </div>
-        <div class="text-box">
-            <span class="desc">좋아요<span class="num">622</span>
-        </div>
-    </a>
-</li>
-
-    $('.sc-profile .profile-item').click(function(e){
-        e.preventDefault();
-        $(this).addClass('active')
-        $(this).siblings().removeClass('active');
-
-        nickName = $(this).find('.name').text();
-
-        $('.sc-profile .strong').text(nickName);
-    });
-*/

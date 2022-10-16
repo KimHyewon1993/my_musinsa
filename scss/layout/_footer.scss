@@ -1,9 +1,9 @@
 .footer {
     padding: 44px 0px 126px;
-    background-color: rgb(17, 17, 17);
-    color: rgb(229, 229, 229);
     text-align: center;
     box-shadow: rgb(17 17 17) 0px 1px 0px;
+    background-color: rgb(17, 17, 17);
+    color: rgb(229, 229, 229);
     .info-area {
         padding-bottom: 20px;
         font-size: 14px;
@@ -16,8 +16,8 @@
         }
         .info-box {
             display: flex;
-            gap: 8px;
             justify-content: center;
+            gap: 8px;
         }
         .link-info {
             width: 130px;
@@ -25,9 +25,9 @@
             margin: 0px 4px;
             border: 1px solid rgb(110, 110, 110);
             border-radius: 2px;
-            box-sizing: border-box;
             font-size: 13px;
             line-height: 28px;
+            box-sizing: border-box;
         }
     }
     .corp-area {
@@ -38,7 +38,7 @@
             margin: 0px 8px;
             color: rgb(110, 110, 110);
             &.personal {
-                font-weight: 700;
+                font-weight: 500;
                 color: #fff;
                 text-decoration: underline;
             }
@@ -54,14 +54,13 @@
             &::after {
                 content: '';
                 position: absolute;
+                top: 50%;
                 width: 6px;
                 height: 6px;
+                transform: translateY(-50%) rotate(45deg);
                 border: 1px solid #fff;
                 border-width: 0px 1px 1px 0px;
-                top: 50%;
                 margin-left: 8px;
-                transform: translateY(-50%);
-                transform: translateY(-50%) rotate(45deg);
             }
             &.active::after {
                 transform: translateY(-50%) rotate(-135deg);
@@ -80,10 +79,10 @@
         .top-strong {
             padding: 0px 4px;
             font-size: 12px;
-            font-weight: 700;
+            font-weight: 600;
             line-height: 18px;
         }
-        .strong {font-weight: 700;}
+        .strong {font-weight: 600;}
         .underline {text-decoration: underline;}
         .copy {    
             margin-top: 5px;
