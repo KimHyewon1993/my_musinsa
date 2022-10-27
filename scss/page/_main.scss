@@ -133,7 +133,7 @@
             justify-content: space-between;
         }
         .price {
-            font-size: 15px;
+            font-size: 4vw;
             font-family: $font-mu;
             font-weight: 500;
         }
@@ -141,7 +141,7 @@
             margin: 0 5px 0 auto;
             font-family: $font-mu;
             font-weight: 500;
-            font-size: 15px;
+            font-size: 4vw;
             color: red;
         }
     }
@@ -182,6 +182,7 @@
             line-height: 20px;
             background-color: #000;
             color: #fff;
+            @include elip;
         }
         img {
             width: 100%;
